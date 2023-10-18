@@ -1,13 +1,33 @@
 import React from 'react';
 
 const AddProduct = () => {
+
+    const handleAddProduct = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const image = form.image.value;
+        const name = form.name.value;
+        const brandname = form.brandname.value;
+        const type = form.type.value;
+        const price = form.price.value;
+        const description = form.description.value;
+        const rating = form.rating.value;
+
+        const newProduct= {image, name, brandname,type,price,description,rating}
+
+        console.log(newProduct);
+
+        //send data to the server 
+
+    }
+
     return (
-        <div className='mt-24 '>
+        <div className='mt-16 '>
 
 
-            <div className='border text-gray-600 font-bold text-3xl max-w-4xl mx-auto text-center  p-16 bg-[#F4F3F0]'>
-                <h2 className='text-5xl font-bold text-gray-600 mb-10'>Add a Product</h2>
-                <form >
+            <div className='border text-gray-600 font-bold text-3xl max-w-4xl mx-auto text-center  p-12 bg-[#F4F3F0]'>
+                <h2 className='text-5xl font-bold text-gray-600 mb-5'>Add a Product</h2>
+                <form onSubmit={handleAddProduct}>
                     <div className='flex justify-between items-center gap-6 '>
                         <div className="form-control  w-3/6">
                             <label className="label">
@@ -70,30 +90,30 @@ const AddProduct = () => {
                             </label>
                         </div>
                     </div>
-                    <div className='flex justify-between items-center gap-6'>
-                        <div className="form-control w-3/6">
-                            <label className="label">
-                                <span className="label-text">Rating</span>
-                            </label>
-                            <label className="input-group">
 
-                                <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
-                            </label>
-                        </div>
-                        <div className="form-control w-3/6">
-                            <label className="label">
-                                <span className="label-text">Add button</span>
-                            </label>
-                            <label className="input-group">
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text">Rating</span>
+                        </label>
+                        <label className="input-group">
 
-                                <input type="text" placeholder="Add button" name="button" className="input input-bordered w-full" />
-                            </label>
-                        </div>
+                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
+                        </label>
                     </div>
+                    <div className='pt-10'>
+                        <button className="btn btn-neutral ">Add Product</button>
+
+                    </div>
+
+                   
+
+
 
 
                 </form>
-               
+
+
+
             </div>
             <div className='pb-32'>
 
