@@ -4,12 +4,18 @@ import Banner from './Banner';
 import BrandName from './BrandName';
 import FeaturedProduct from './FeaturedProduct';
 import SomeProduct from './SomeProduct';
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
+
+    const products = useLoaderData();
     return (
         <div>
-            this is home
+            
             <Banner></Banner>
+            <div>
+                <h1>All Products:{products.length}</h1>
+            </div>
             <BrandName></BrandName>
             <SomeProduct></SomeProduct>
             <FeaturedProduct></FeaturedProduct>
