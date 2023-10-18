@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "image": "/cardImage/card1.jpg",
+    "name": "Physician Consultation",
+    "card_description": "Essential for proactive health care.",
+    "price": 280,
+    "details_description": "Why is it important to consult a physician?Seeing your doctor on a regular basis helps you maintain a relationship with your doctor's practice, so that your doctor is aware of changes in your health and can address them quickly with changes in medication or helping you find a specialist."
+    
+  },
+  {
+    "id": "2",
+    "image": "/cardImage/card2.webp",
+    "name": "Mental Health Service",
+    "card_description": "Support for mental well-being. ",
+    "price": 390,
+    "details_description": "Mental health services provide essential support and treatment for individuals facing mental health challenges. These services encompass a wide range of treatments, therapies, and interventions aimed at improving mental well-being and quality of life. They can include therapy sessions, counseling, medication management, crisis intervention, and support groups, among other forms of assistance. Mental health services play a crucial role in addressing mental health disorders, reducing stigma, and promoting overall emotional and psychological wellness in individuals of all ages."
+   
+  },
+  {
+    "id": "3",
+    "image": "/cardImage/card3.jpg",
+    "name": "Healthy Cooking Demonstrations",
+    "card_description": "Interactive Healthy Cooking Workshops Offered ",
+    "price": 380,
+    "details_description": "Join our expert chefs for interactive Healthy Cooking Demonstrations. Learn easy, nutritious recipes and culinary tips for a healthier lifestyle. Discover the joy of cooking wholesome meals for you and your family."
+   
+  },
+  {
+    "id": "4",
+    "image": "/cardImage/card4.png",
+    "name": "Nutrition and Diet Services",
+    "card_description": "Personalized Nutrition Plans for Wellness",
+    "price": 250,
+    "details_description": "Nutrition services means services provided by qualified personnel who conduct individual assessments in nutritional history and dietary intake, anthropometric, biochemical, and clinical variables, feeding skills and problems, or food habits and preferences"
+    
+  },
+  {
+    "id": "5",
+    "image": "/cardImage/card5.webp",
+    "name": " Meditation Workshops",
+    "card_description": "Inner peace through guided meditation.",
+    "price": 240,
+    "details_description": "Start meditating. Get personal guidance based on years of experience. On a donation basis. Learn why you should meditate and how to do it. We offer a free 6 week meditation course. Volledig Vrijblijvend. Geheel op Donatie Basis. Persoonlijke Begeleiding."
+    
+  },
+  {
+    "id": "6",
+    "image": "/cardImage/card6.jpg",
+    "name": "Cancer Prevention and Screening",
+    "card_description": "Early detection saves lives. Act.",
+    "price": 180,
+    "details_description": "CDC supports screening for breast, cervical, colorectal (colon), and lung cancers as recommended by the U.S. Preventive Services Task Force (USPSTF).Some tests can help find cancer before signs or symptoms appear. This is called cancer screening "
+    
+  }
+]
