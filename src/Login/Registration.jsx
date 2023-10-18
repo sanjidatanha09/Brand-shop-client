@@ -14,6 +14,27 @@ const Registration = () => {
         createUser(email,password)
         .then(result => {
             console.log(result.user);
+            //new user has been created
+            const createdAt = result.user?.metadata?.creationTime;
+
+            const user = {email,createdAt: createdAt };
+
+            fetch('http://localhost:5000/user',{
+                method: 'POST',
+                headers:{
+                    'content-type' : 'applicaton/json'
+                },
+                body: JSON.stringify(user)
+            })
+            .then(res => res.json())
+            .then(data =>{
+                if(data.insertedId){
+                    console.log('user added tho the database');
+
+
+                }
+                
+            })
         })
         .catch(error =>{
             console.error(error)
