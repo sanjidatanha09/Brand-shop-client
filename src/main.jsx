@@ -18,7 +18,6 @@ import Users from './Users/Users';
 import BrandName from './components/BrandName';
 import AllBrands from './components/AllBrands';
 import ProductInfo from './components/ProductInfo';
-import MyCart from './components/MyCart';
 import PrivateRoute from './layout/PrivateRoute';
 
 
@@ -44,12 +43,8 @@ const router = createBrowserRouter([
         element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
       },
       {
-        path: '/mycart',
-        element:<MyCart></MyCart>,
-      },
-      {
         path: '/productinfo',
-        element: <ProductInfo></ProductInfo>,
+        element: <PrivateRoute><ProductInfo></ProductInfo></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/product')
       },
       {
@@ -67,7 +62,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/users',
-        element: <Users></Users>,
+        element: <PrivateRoute><Users></Users></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/user')
       }
     

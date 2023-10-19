@@ -50,7 +50,7 @@ const ProductCard = ({ product, products, setProduct }) => {
 
     return (
         <div className='max-w-6xl mx-auto  lg:w-full'>
-            <div className="card card-side bg-base-100 shadow-xl ">
+            <cart className="card card-side bg-base-100 shadow-xl ">
                 <figure><img className='lg:w-[200px] h-[200px]' src={image} alt="Movie" /></figure>
                 <div className=" flex justify-between   w-full ">
                     <div className='pl-10 pt-8'>
@@ -70,7 +70,7 @@ const ProductCard = ({ product, products, setProduct }) => {
 
                     </div>
                 </div>
-            </div>
+            </cart>
         </div>
     );
 };
