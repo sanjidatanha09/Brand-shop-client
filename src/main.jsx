@@ -19,6 +19,7 @@ import BrandName from './components/BrandName';
 import AllBrands from './components/AllBrands';
 import ProductInfo from './components/ProductInfo';
 import MyCart from './components/MyCart';
+import PrivateRoute from './layout/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/addproduct',
-        element:<AddProduct></AddProduct>,
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
       },
       {
         path: '/mycart',

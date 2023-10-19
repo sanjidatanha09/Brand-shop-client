@@ -49,14 +49,14 @@ const ProductCard = ({ product, products, setProduct }) => {
     }
 
     return (
-        <div className='max-w-6xl mx-auto  w-full'>
+        <div className='max-w-6xl mx-auto  lg:w-full'>
             <div className="card card-side bg-base-100 shadow-xl ">
-                <figure><img className='w-[200px] h-[200px]' src={image} alt="Movie" /></figure>
+                <figure><img className='lg:w-[200px] h-[200px]' src={image} alt="Movie" /></figure>
                 <div className=" flex justify-between   w-full ">
                     <div className='pl-10 pt-8'>
-                        <h2 className="card-title">Name: {name} </h2>
-                        <p>{brandname}</p>
-                        <p>{price}</p>
+                        <h2 className="card-title text-sm lg:text-xl">Name: {name} </h2>
+                        <p className='text-lg lg:text-2xl lg:font-bold'>{brandname}</p>
+                        <p className='text-lg lg:text-2xl lg:font-bold'>{price}</p>
                     </div>
                     <div className="card-actions justify-end pr-10 pt-4">
                         <div className="btn-group btn-group-vertical gap-3 ">

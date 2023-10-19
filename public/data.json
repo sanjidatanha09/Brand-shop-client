@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "https://i.ibb.co/jLBH22Z/google-watch1.webp",
+    "image": "https://i.ibb.co/W322npJ/google1.webp",
     "brandname": "Google ",
     "card_description": "Essential for proactive health care.",
     "price": 280,
@@ -10,7 +10,7 @@
   },
   {
     "id": "2",
-    "image": "https://i.ibb.co/R0FSzm0/Sony-Xperia-5-26phone2.webp",
+    "image": "https://i.ibb.co/RBrbWQN/sony2.png",
     "brandname": "Sony",
     "card_description": "Support for mental well-being. ",
     "price": 390,
@@ -19,7 +19,7 @@
   },
   {
     "id": "3",
-    "image": "https://i.ibb.co/rpWwZkG/intel-fodable-phone3.png",
+    "image": "https://i.ibb.co/4Zv5s8f/intel3.jpg",
     "brandname": "Intel",
     "card_description": "Interactive Healthy Cooking Workshops Offered ",
     "price": 380,
@@ -28,7 +28,7 @@
   },
   {
     "id": "4",
-    "image": "https://i.ibb.co/WKLFNyL/samsung4.jpg",
+    "image": "https://i.ibb.co/02LdBNL/sams.jpg",
     "brandname": "Samsung ",
     "card_description": "Personalized Nutrition Plans for Wellness",
     "price": 250,
@@ -37,7 +37,7 @@
   },
   {
     "id": "5",
-    "image": "https://i.ibb.co/XSF5dSs/oppophobne5.webp",
+    "image": "https://i.ibb.co/488L4xN/oppo5.png",
     "brandname": "Oppo ",
     "card_description": "Inner peace through guided meditation.",
     "price": 240,
@@ -46,7 +46,7 @@
   },
   {
     "id": "6",
-    "image": "https://i.ibb.co/RcNnscj/aplelaptop6.jpg",
+    "image": "https://i.ibb.co/3W5rrCD/apple6.png",
     "brandname": "Apple",
     "card_description": "Early detection saves lives. Act.",
     "price": 180,

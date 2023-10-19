@@ -7,12 +7,12 @@ const Users = () => {
 
     return (
         <div className='max-w-3xl mx-auto bg-blue-200 rounded-lg'>
-            <h2 className='font-bold text-3xl text-slate-700 text-center p-10'>Number of Users : {loadedUsers.length}</h2>
+            <h2 className='font-bold lg:text-3xl text-slate-700 text-center p-10'>Number of Users : {loadedUsers.length}</h2>
 
             <div className="overflow-x-auto font-bold text-slate-700">
                 <table className="table pl-">
                     {/* head */}
-                    <thead className='text-2xl'>
+                    <thead className='font-bold text-lg lg:text-2xl'>
                         <tr>
                            
                             <th>Email</th>
@@ -20,7 +20,7 @@ const Users = () => {
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='text-sm lg:text-lg'>
                         {/* row 1 */}
                         {
                             users.map(user => <tr>
