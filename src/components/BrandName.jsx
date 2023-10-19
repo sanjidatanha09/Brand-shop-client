@@ -1,18 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const BrandName = () => {
+const BrandName = ({product}) => {
+    const { id, brandname, image} = product || {}
     return (
         <div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+            <Link to={`/allbrand/${brandname}`}>
+                <div className="card card-compact bg-gray-400 shadow-xl">
+                    <figure><img className='w-full h-[200px]' src={image} alt="Shoes" /></figure>
+                    <div className="card-body text-right w-[400px] mx-auto">
+                        <h2 className="card-title py-5 text-3xl font-bold ">{brandname}</h2>
+                        <div className='w-[280px]  text-right'>
+                            <button className='w-[100px]  btn btn-neutral '>Click</button>
+
+                        </div>
+                       
+
+
                     </div>
                 </div>
-            </div>
+
+            </Link>
+           
         </div>
     );
 };

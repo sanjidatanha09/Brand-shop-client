@@ -11,10 +11,14 @@ import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import AddProduct from './components/AddProduct';
 import Login from './Login/Login';
-import MyCart from './components/MyCart';
 import Registration from './Login/Registration';
 import Update from './components/Update';
 import AuthProvider from './Providers.jsx/AuthProvider';
+import Users from './Users/Users';
+import BrandName from './components/BrandName';
+import AllBrands from './components/AllBrands';
+import ProductInfo from './components/ProductInfo';
+import MyCart from './components/MyCart';
 
 
 const router = createBrowserRouter([
@@ -26,7 +30,13 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
+        loader: () => fetch('/data.json'),
        
+      },
+      {
+        path:'/allbrand/:brandname',
+        element:<AllBrands></AllBrands>,
+
       },
       {
         path: '/addproduct',
@@ -34,7 +44,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/mycart',
-        element: <MyCart></MyCart>,
+        element:<MyCart></MyCart>,
+      },
+      {
+        path: '/productinfo',
+        element: <ProductInfo></ProductInfo>,
         loader: () => fetch('http://localhost:5000/product')
       },
       {
@@ -49,6 +63,11 @@ const router = createBrowserRouter([
       {
         path:'/registration',
         element:<Registration></Registration>,
+      },
+      {
+        path: '/users',
+        element: <Users></Users>,
+        loader: () => fetch('http://localhost:5000/user')
       }
     
     ]

@@ -4,11 +4,14 @@ import Banner from './Banner';
 import BrandName from './BrandName';
 import FeaturedProduct from './FeaturedProduct';
 import SomeProduct from './SomeProduct';
+import { useLoaderData } from 'react-router-dom';
+import CricFeast from './CricFeast';
 
 
 const Home = () => {
 
-    // const products = useLoaderData();
+    const product = useLoaderData();
+   
     return (
         <div>
             
@@ -28,10 +31,27 @@ const Home = () => {
                     }
                 </div>
             </div> */}
+            <div className='max-w-6xl mx-auto'>
+                <div className='text-center my-10'>
+                    
+                    <p className='font-bold text-gray-600 text-3xl lg:text-5xl '>All Brand Name</p>
+                </div>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
+                    {
+                        product.map(prod => <BrandName key={prod.id} product={prod}>
+
+                        </BrandName>)
+                    }
+
+                </div>
+
+            </div>
             
-            <BrandName></BrandName>
-            <SomeProduct></SomeProduct>
+            
+           
             <FeaturedProduct></FeaturedProduct>
+            <CricFeast></CricFeast>
+            <SomeProduct></SomeProduct>
 
             <Footer></Footer>
         </div>
