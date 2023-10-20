@@ -1,8 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLoaderData } from 'react-router-dom';
 
-const BrandName = ({product}) => {
-    const { id, brandname, image} = product || {}
+const BrandName = ({ product }) => {
+    const { id, brandname, image } = product || {}
+
+    // const brands = useLoaderData();
+    // console.log(brands)
+    // const [branddata, setBranddata] = useState(brands);
+
+    
+
     return (
         <div>
             <Link to={`/allbrand/${brandname}`}>
@@ -14,14 +21,14 @@ const BrandName = ({product}) => {
                             <button className='w-[100px]  btn btn-neutral '>Click</button>
 
                         </div>
-                       
+
 
 
                     </div>
                 </div>
 
             </Link>
-           
+
         </div>
     );
 };

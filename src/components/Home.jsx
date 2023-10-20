@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import Banner from './Banner';
-import BrandName from './BrandName';
+import BrandName from './Brands/BrandName';
 import FeaturedProduct from './FeaturedProduct';
 import SomeProduct from './SomeProduct';
 import { useLoaderData } from 'react-router-dom';
