@@ -42,12 +42,14 @@ const Navbar = () => {
         <li><NavLink to="/addproduct">Add Product</NavLink></li>
         <li><NavLink to="/mycart">My Cart</NavLink></li>
         <li><NavLink to="/users">users</NavLink></li>
+    
+       
 
 
     </>
 
     return (
-        <div className='max-w-6xl mx-auto py-7 font-sans gap-5 '>
+        <div className=' py-7 font-sans gap-5 '>
             <div className='w-[200px] mx-auto'>
 
                 <label className="swap swap-rotate">
