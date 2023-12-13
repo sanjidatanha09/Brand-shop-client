@@ -24,7 +24,7 @@ const Update = () => {
     
 
         //send data to the server 
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/product/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

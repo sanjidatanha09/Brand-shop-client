@@ -14,7 +14,7 @@ const BtnDetails = () => {
 
         //send data to the server
 
-        fetch('http://localhost:5000/card',{
+        fetch(' https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/card',{
             method:'POST',
             headers:{
                 'content-type' : 'application/json'

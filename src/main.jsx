@@ -42,35 +42,35 @@ const router = createBrowserRouter([
       {
         path:'/allbrand/:brandname',
         element:<AllBrands></AllBrands>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.brandname}`),
+        loader: ({params}) => fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/product/${params.brandname}`),
       
 
       },
       {
         path: '/addproduct',
-        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
+        element: <AddProduct></AddProduct>,
       },
       {
         path: '/mycart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/card'),
+        loader: () => fetch(' https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/card'),
       },
       {
         path: '/btndetails/:id',
         element: <PrivateRoute><BtnDetails></BtnDetails> </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/server/${params.id}`)
+        loader: ({ params }) => fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/server/${params.id}`)
       },
 
       {
         path: '/productinfo',
         element: <ProductInfo></ProductInfo>,
-        loader: () => fetch('http://localhost:5000/product'),
+        loader: () => fetch(' https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/product'),
         
       },
       {
         path:'/update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({ params }) => fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/product/${params.id}`)
       },
       {
         path:'/login',
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
       {
         path: '/users',
         element: <PrivateRoute><Users></Users></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/user')
+        loader: () => fetch(' https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/user')
       }
     
     ]

@@ -20,7 +20,7 @@ const MyCart2 = ({ product, products, setProduct }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/card/${_id}`, {
+                fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/card/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

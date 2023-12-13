@@ -7,6 +7,8 @@ import SomeProduct from './SomeProduct';
 import { useLoaderData } from 'react-router-dom';
 import CricFeast from './CricFeast';
 import { FaBeer } from 'react-icons/fa';
+import About from '../extrafeature/About';
+import Contact from '../extrafeature/Contact';
 
 
 const Home = () => {
@@ -40,6 +42,8 @@ const Home = () => {
            
             <FeaturedProduct></FeaturedProduct>
             <CricFeast></CricFeast>
+            <About></About>
+            <Contact></Contact>
             <SomeProduct></SomeProduct>
 
             <Footer></Footer>

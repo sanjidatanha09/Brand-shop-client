@@ -19,7 +19,7 @@ const AllBrands2 = ({product}) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/product/${_id}`, {
+                fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/product/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

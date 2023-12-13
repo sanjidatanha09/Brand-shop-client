@@ -78,7 +78,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className=''>
-                        <img className='w-[80px] lg:w-[150px]' src="https://i.ibb.co/BLLsLtX/tech-logo.webp" alt="" />
+                        <img className='w-[50px] lg:w-[100px] rounded-full h-[100px]' src="https://img.freepik.com/free-vector/creative-gradient-laptop-logo-template_23-2149010269.jpg" alt="" />
 
 
                     </div>
@@ -107,6 +107,7 @@ const Navbar = () => {
                         }
                         <div>
                             <p className='text-sm font-bold'>{user?.email}</p>
+                            
 
 
                         </div>

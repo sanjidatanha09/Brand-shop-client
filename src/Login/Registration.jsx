@@ -39,17 +39,17 @@ const Registration = () => {
         }
 
 
-       
+
 
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
                 //new user has been created
-                
+
                 const createAt = result.user?.metadata?.creationTime;
 
                 const user = { email, createAt: createAt };
-                fetch('http://localhost:5000/user', {
+                fetch(' https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/user', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -66,14 +66,14 @@ const Registration = () => {
                                 icon: 'success',
                                 confirmButtonText: 'Cool'
                             })
-                            
+
                         }
                     })
             })
             .catch(error => {
                 console.error(error)
                 toast(error.message);
-                
+
             })
 
     }
@@ -124,11 +124,11 @@ const Registration = () => {
                                 <input type={showpassword ? "text" : "password"} name='password' placeholder="password" className="input input-bordered w-full" required />
 
                                 <span className='bottom-4 lg:bottom-[14px] right-4 absolute' onClick={() => setShowpassword(!showpassword)}>
-                                {
-                                    showpassword ? <FaRegEyeSlash></FaRegEyeSlash> : <FaEye></FaEye>
-                                }
+                                    {
+                                        showpassword ? <FaRegEyeSlash></FaRegEyeSlash> : <FaEye></FaEye>
+                                    }
 
-                            </span>
+                                </span>
 
                             </div>
 
