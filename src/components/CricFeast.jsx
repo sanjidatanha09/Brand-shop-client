@@ -15,7 +15,6 @@ const CricFeast = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="card card-compact  bg-base-100 shadow-xl">
                     <figure><img className='h-[230px] w-full' src="https://s.yimg.com/uu/api/res/1.2/wXIB8.KWEJshW5S2iNdSrQ--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-08/61396fe0-2493-11ed-9ffd-254410c436db.cf.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -26,7 +25,6 @@ const CricFeast = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="card card-compact  bg-base-100 shadow-xl">
                     <figure><img className='h-[230px] w-full' src="https://i.ibb.co/cxMbvHH/oppo-watch.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -37,7 +35,6 @@ const CricFeast = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="card card-compact  bg-base-100 shadow-xl">
                     <figure><img className='h-[230px] w-full' src="https://i.ibb.co/Kjm1VbW/oppow.webp" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -48,7 +45,6 @@ const CricFeast = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="card card-compact  bg-base-100 shadow-xl">
                     <figure><img className='h-[230px] w-full' src="https://i.ibb.co/RNYr4ww/galaxys22.webp" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -59,8 +55,7 @@ const CricFeast = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="card card-compact  bg-base-100 shadow-xl">
+                <div className="card card-compact bg-base-100 shadow-xl">
                     <figure><img className='h-[230px] w-full' src="https://i.ibb.co/VgctLsL/narzo-20.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-bold text-3xl text-gray-500">Narzo 20 Samrtphone </h2>
@@ -70,12 +65,7 @@ const CricFeast = () => {
                         </div>
                     </div>
                 </div>
-                
-
             </div>
-
-          
-
         </div>
     );
 };
