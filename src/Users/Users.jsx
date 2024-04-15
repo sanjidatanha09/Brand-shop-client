@@ -18,28 +18,15 @@ const Users = () => {
                             <th>Action</th>
                         </tr>
                     </thead>
+                    {/* {table body} */}
                     <tbody className='text-sm lg:text-lg'>
-                       
                         {
                             users.map(user => <tr>
-                               
                                <td>{user.email}</td>
                                <td>{user.createAt}</td>
                                <td>
                                 <button className='btn btn-info'>X</button>
                                </td>
-
-                            </tr>)
-                        }
-                        {/* row 2 */}
-                        {
-                            users.map(user => <tr>
-
-                                <td>{user.email}</td>
-                                <td>{user.createAt}</td>
-                                <td>
-                                    <button className='btn btn-info'>X</button>
-                                </td>
 
                             </tr>)
                         }
