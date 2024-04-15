@@ -4,7 +4,6 @@ import { useLoaderData } from 'react-router-dom';
 const Users = () => {
     const loadedUsers = useLoaderData();
     const [users, setUsers] = useState(loadedUsers);
-
     return (
         <div className='max-w-3xl mx-auto bg-blue-200 rounded-lg'>
             <h2 className='font-bold lg:text-3xl text-slate-700 text-center p-10'>Number of Users : {loadedUsers.length}</h2>
@@ -20,7 +19,7 @@ const Users = () => {
                         </tr>
                     </thead>
                     <tbody className='text-sm lg:text-lg'>
-                        {/* row 1 */}
+                       
                         {
                             users.map(user => <tr>
                                
@@ -32,8 +31,18 @@ const Users = () => {
 
                             </tr>)
                         }
-                       
-        
+                        {/* row 2 */}
+                        {
+                            users.map(user => <tr>
+
+                                <td>{user.email}</td>
+                                <td>{user.createAt}</td>
+                                <td>
+                                    <button className='btn btn-info'>X</button>
+                                </td>
+
+                            </tr>)
+                        }
                     </tbody>
                 </table>
             </div>
