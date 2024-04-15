@@ -22,11 +22,6 @@ import PrivateRoute from './layout/PrivateRoute';
 import BtnDetails from './components/Brands/BtnDetails';
 import MyCart from './MyCart/MyCart';
 
-
-// btndetails / 65311bae3925d787537d47d0
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,14 +32,11 @@ const router = createBrowserRouter([
         path:'/',
         element:<Home></Home>,
         loader: () => fetch('/data.json'),
-       
       },
       {
         path:'/allbrand/:brandname',
         element:<AllBrands></AllBrands>,
         loader: ({params}) => fetch(` https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/product/${params.brandname}`),
-      
-
       },
       {
         path: '/addproduct',
@@ -85,7 +77,6 @@ const router = createBrowserRouter([
         element: <PrivateRoute><Users></Users></PrivateRoute>,
         loader: () => fetch(' https://brand-shop-rhs6z662f-sanjida-tanhas-projects.vercel.app/user')
       }
-    
     ]
   },
 ]);
