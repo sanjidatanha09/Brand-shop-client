@@ -14,7 +14,6 @@ const Users = () => {
                     {/* head */}
                     <thead className='font-bold text-lg lg:text-2xl'>
                         <tr>
-                           
                             <th>Email</th>
                             <th>Created At</th>
                             <th>Action</th>
